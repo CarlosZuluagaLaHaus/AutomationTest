@@ -7,7 +7,7 @@ Característica: Proceso de diligenciamiento encuesta sintomas Covid-19 página 
   Para garantizar a diario esta tarea
 
   ··Antecedentes: Abrir página web encuesta sintomas Covid-19 de Sura
-    
+
 
   Escenario: Diligenciar encuesta diaria de sintas Covid-19 Sura.
     Dado que Carlos se encuentra en la página de 'Sura'
