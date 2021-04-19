@@ -45,6 +45,7 @@ dependencies {
             "net.serenity-bdd:serenity-screenplay:2.2.0",
             "net.serenity-bdd:serenity-screenplay-webdriver:2.2.0"
     testImplementation "net.serenity-bdd:serenity-cucumber5:2.2.0"
+    testCompile 'net.serenity-bdd:serenity-zalenium:${serenity.version}'
 }
 
 wrapper {
