@@ -1,17 +1,18 @@
 pipeline {
     agent any
-    triggers {
-        pollSCM('* * * * *')
-    }
+
     stages {
         stage("Compile") {
             steps {
                 sh "./gradlew compileJava"
             }
         }
-        stage("Unit test") {
-            steps {
-                sh "./gradlew clean test aggregate"
+
+        stages {
+            stage('Test') {
+              steps {
+                sh './gradlew clean build -P env=prod'
+              }
             }
         }
     }
