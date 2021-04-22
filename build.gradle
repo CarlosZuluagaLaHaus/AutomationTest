@@ -73,14 +73,6 @@ dependencies {
             "org.hamcrest:hamcrest-all:1.3"
 }
 
-test {
-    maxParallelForks = Runtime.runtime.availableProcessors()
-}
-
-tasks.withType(Test) {
-    maxParallelForks = Runtime.runtime.availableProcessors()
-}
-
 wrapper {
     gradleVersion = '6.8'
 }
