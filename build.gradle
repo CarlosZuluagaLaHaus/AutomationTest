@@ -40,6 +40,9 @@ serenity {
 }
 
 dependencies {
+    implementation group: 'org.slf4j', name: 'slf4j-simple', version: '1.7.25'
+    implementation 'org.apache.logging.log4j:log4j-api:2.11.1'
+    implementation 'org.apache.logging.log4j:log4j-core:2.11.1'
     implementation "net.serenity-bdd:serenity-core:2.2.0",
             "net.serenity-bdd:serenity-screenplay:2.2.0",
             "net.serenity-bdd:serenity-screenplay-rest:2.2.0",
